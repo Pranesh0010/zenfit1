@@ -1,0 +1,109 @@
+/* Poppins Font */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* General styling */
+body {
+    background: url("image3.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+/* Wrapper styling to center content */
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: white;
+}
+
+/* Header styling */
+h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+/* Navigation link styling */
+a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover {
+    color: black;
+}
+
+/* Dashboard feature section styling */
+.features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+/* Feature item styling */
+.feature-item {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+}
+
+.feature-item:hover {
+    background-color: rgba(248, 249, 250, 0.8);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Chart container styling */
+canvas {
+    display: block;
+    margin: 0 auto;
+    max-width: 500px;
+    max-height: 400px;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 786px) {
+    .wrapper {
+        min-height: 100vh;
+    }
+    .features {
+        width: 90%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .wrapper {
+        min-height: 100vh;
+    }
+    .features {
+        width: 100%;
+    }
+}

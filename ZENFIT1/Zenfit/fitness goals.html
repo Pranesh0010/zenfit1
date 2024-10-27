@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Goals - ZenFit</title>
+  <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+  <div class="wrapper" id="login">
+    <section class="fitness-form-container">
+      <div class="top">
+        <h2>Enter Your Fitness Information</h2>
+        <p>Get personalized fitness recommendations based on your information</p>
+      </div>
+      
+      <form id="fitnessForm" action="#" method="post" onsubmit="submitFitnessForm(event)">
+        <div class="input-box">
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="10" max="100" required placeholder="Enter your age">
+        </div>
+        
+        <div class="input-box">
+          <label for="height">Height (cm):</label>
+          <input type="number" id="height" name="height" min="50" max="250" required placeholder="Enter your height">
+        </div>
+        
+        <div class="input-box">
+          <label for="weight">Weight (kg):</label>
+          <input type="number" id="weight" name="weight" min="20" max="200" required placeholder="Enter your weight">
+        </div>
+        
+        <div class="input-box">
+          <label for="goal">Fitness Goal:</label>
+          <select id="goal" name="goal" required>
+            <option value="" disabled selected>Select your goal</option>
+            <option value="lose">Vegan</option>
+            <option value="gain">Vegetarian</option>
+            <option value="non-veg">NON-Vegetarian</option>
+          </select>
+        </div>
+        
+        <div class="input-box">
+          <input type="submit" class="submit" id="submitBtn" value="Get Personalized Recommendation">
+        </div>
+      </form>
+    </section>
+  </div>
+
+  <script>
+    function submitFitnessForm(event) {
+      event.preventDefault();  // Prevent form submission for demonstration
+
+      // Change the button color to white upon click
+      var submitButton = document.getElementById("submitBtn");
+      submitButton.style.backgroundColor = "white";
+      submitButton.style.color = "black";  // Optional: change text color for contrast
+
+      // You can add additional logic here to send form data to the server or handle recommendations
+      console.log("Form submitted");  // For demonstration purposes
+    }
+  </script>
+</body>
+</html>

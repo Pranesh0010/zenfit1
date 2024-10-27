@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition Tracking</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="nutrition2.css">
+
+</head>
+<body>
+    <h1>Daily Intake of Supplements</h1>
+    <canvas id="intakeChart" width="400" height="400"></canvas>
+
+    <script>
+        const ctx = document.getElementById('intakeChart').getContext('2d');
+        const intakeChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Protein', 'Vitamins', 'Minerals', 'Carbs', 'Fats'],
+                datasets: [{
+                    label: 'Daily Intake (grams)',
+                    data: [30, 20, 15, 50, 10], // Sample data, replace with actual data
+                    backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                    borderColor: 'rgba(54, 162, 235, 1)',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

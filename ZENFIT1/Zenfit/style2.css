@@ -1,0 +1,131 @@
+/* POPPINS FONT */
+* {  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: url("image1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+/* Wrapper styling to center content */
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 110vh;
+  background: rgba(39, 39, 39, 0.4);
+}
+
+/* Form container styling */
+.fitness-form-container {
+  width: 100%;
+  max-width: 400px;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  backdrop-filter: blur(5px);
+  z-index: 2;
+}
+
+/* Form header styling */
+.fitness-form-container h2 {
+  font-size: 1.8rem;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+/* Input box styling for form fields */
+.input-box {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.input-box label {
+  font-size: 0.9rem;
+  color: #fff;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+/* Input and select field styling */
+.input-box input,
+.input-box select {
+  font-size: 15px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  height: 50px;
+  width: 100%;
+  padding: 0 10px 0 45px;
+  border: none;
+  border-radius: 30px;
+  outline: none;
+  transition: 0.2s ease;
+}
+
+.input-box input:hover,
+.input-box input:focus,
+.input-box select:hover,
+.input-box select:focus {
+  background: rgba(255, 255, 255, 0.25);
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.input-box i {
+  position: absolute;
+  top: 50%;
+  left: 15px;
+  color: #fff;
+  transform: translateY(-50%);
+}
+
+/* Submit button styling to match the design */
+.submit {
+  font-size: 15px;
+  font-weight: 500;
+  color: black;
+  height: 45px;
+  width: 100%;
+  border: none;
+  border-radius: 30px;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.submit:hover {
+  background: rgba(255, 255, 255, 0.5);
+  box-shadow: 1px 5px 7px 1px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries for Responsive Design */
+@media only screen and (max-width: 786px) {
+  .wrapper {
+      min-height: 100vh;
+  }
+  .fitness-form-container {
+      width: 90%;
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .wrapper {
+      min-height: 100vh;
+  }
+  .fitness-form-container {
+      width: 100%;
+      padding: 1.5rem;
+  }
+}
